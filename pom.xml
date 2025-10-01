@@ -18,6 +18,12 @@
   </properties>
 
   <dependencies>
+    <!-- JavaParser for static analysis -->
+    <dependency>
+        <groupId>com.github.javaparser</groupId>
+        <artifactId>javaparser-core</artifactId>
+        <version>3.25.5</version>
+    </dependency>
     <!-- GZoltar formulas (Ochiai, Tarantula, Barinel, etc.) -->
     <dependency>
       <groupId>com.gzoltar</groupId>
