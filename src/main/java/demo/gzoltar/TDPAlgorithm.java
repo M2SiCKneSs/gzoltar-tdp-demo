@@ -12,8 +12,9 @@ import demo.gzoltar.TDPDataStructures.*;
  */
 public class TDPAlgorithm {
     
-    private final HittingSetComputer hittingSetComputer;
+    private final FilteredHittingSetComputer  hittingSetComputer;
     private final EntropyTestPlanner testPlanner;
+    private final StaticAnalyzer staticAnalyzer;
     
     // TDP state
     private List<String> elements;
@@ -23,8 +24,9 @@ public class TDPAlgorithm {
     private List<AvailableTest> availableTests;
     
     public TDPAlgorithm() {
-        this.hittingSetComputer = new HittingSetComputer();
-        this.testPlanner = new EntropyTestPlanner();
+        this.hittingSetComputer = new FilteredHittingSetComputer ();
+        this.testPlanner = new EntropyTestPlanner();    
+        this.staticAnalyzer = new StaticAnalyzer();
     }
     
     /**
